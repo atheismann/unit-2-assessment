@@ -1,8 +1,4 @@
 const todos = [
-  {todo: 'JavaScript'},
-  {todo: 'HTML'},
-  {todo: 'CSS'},
-  {todo: 'TWIG'},
 ];
 
 module.exports = {
@@ -10,7 +6,6 @@ module.exports = {
   getAll,
   create,
   deleteOne,
-  update,
 };
 
 function getOne(id){
@@ -27,8 +22,4 @@ function create(todo){
 
 function deleteOne(id){
   todos.splice(id,1);
-}
-
-function update(id, todo) {
-todos[id] = todo;
 }
